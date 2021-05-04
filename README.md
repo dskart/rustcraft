@@ -1,5 +1,6 @@
 [![Github Link][github badge]][github link]
 [![MSRV][rust 1.51.0+ badge]][rust 1.51.0+ link]
+![license]
 
 <br />
 <h1 align="center">Rustcraft</h1>
@@ -78,3 +79,9 @@ cargo run --release -- -f
 
 This project is licensed under the [MIT](LICENSE) - see the [LICENSE](LICENSE) file for
 details.
+
+[github badge]: https://img.shields.io/badge/github-dskart/rustcraft-8da0cb?style=flat&logo=github
+[github link]: https://github.com/dskart/rustcraft
+[rust 1.51.0+ badge]: https://img.shields.io/badge/rust-1.51.0+-93450a.svg?style=flat&logo=rust
+[rust 1.51.0+ link]: https://blog.rust-lang.org/2021/03/25/Rust-1.51.0.html
+[license]: https://img.shields.io/github/license/dskart/rustcraft?style=flat 
