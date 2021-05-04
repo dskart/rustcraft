@@ -55,7 +55,7 @@ cargo run --release -- -c
 Running a flat world:
 
 ```bash
-cargo run --release -- -c
+cargo run --release -- -f
 ```
 
 ## Authors
@@ -64,5 +64,5 @@ cargo run --release -- -c
 
 ## License
 
-This project is licensed under the [MIT](LICENSE) - see the [LICENSE.md](LICENSE) file for
+This project is licensed under the [MIT](LICENSE) - see the [LICENSE](LICENSE) file for
 details.
