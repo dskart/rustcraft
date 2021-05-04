@@ -7,7 +7,7 @@ Rustcraft is a simple Minecraft engine written in rust using [wgpu](https://gith
 
 ## But Why?
 
-You may ask yourself why does this exist? I wanted to work on a project to learn more about [wgpu](https://github.com/gfx-rs/wgpu-rs) as well as practice my Rust skills. I then randomly saw this youtube [video](https://youtu.be/4O0_-1NaWnY) and got inspired to try to make a simple Minecraft engine in Rust!
+I wanted to work on a project to learn more about [wgpu](https://github.com/gfx-rs/wgpu-rs) as well as practice my Rust skills. I then randomly saw this youtube [video](https://youtu.be/4O0_-1NaWnY) and got inspired to try to make a simple Minecraft engine in Rust!
 
 ## Inspiration
 
