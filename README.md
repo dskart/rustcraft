@@ -19,14 +19,14 @@ I am pretty happy with the current state of the engine. There are a few problems
 
 ## Potential Updates
 
-- [] Transparent water
-- [] Lighting (real sun or "hacked" lighting)
-- [] Block memory map (saves location of broken/placed blocks)
-- [] Game physics
-- [] additional sprites: (tree, flowers)
-- [] Block selection during placement
-- [] Biomes
-- [] "Real" concurency for chunk generation (Tokio).
+- [ ] Transparent water
+- [ ] Lighting (real sun or "hacked" lighting)
+- [ ] Block memory map (saves location of broken/placed blocks)
+- [ ] Game physics
+- [ ] additional sprites: (tree, flowers)
+- [ ] Block selection during placement
+- [ ] Biomes
+- [ ] "Real" concurency for chunk generation (Tokio).
 
 ## Prerequisites
 
