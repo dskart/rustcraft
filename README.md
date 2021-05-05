@@ -26,7 +26,7 @@ As I explained I was inspired by this [video](https://youtu.be/4O0_-1NaWnY) and 
 
 ## Current State
 
-I am pretty happy with the current state of the engine. There are a few problems with it but they are outside of my MVP scope. I am aware that the game is not as efficient and smooth as it should be. I initially set as a goal to not use any threading or unsafe rust. I did end up eventually using [rayon](https://github.com/rayon-rs/rayon) (but I should really be using [Tokio](https://github.com/tokio-rs/tokio)). This would require some not trivial redesign and maybe I will update this in the future 🤷.
+I am pretty happy with the current state of the engine. There are a few problems with it but they are outside of my MVP scope. I am aware that the game is not as efficient and smooth as it should be. I initially set as a goal to not use any threading or unsafe rust. Turns out it is hard to generate the world efficiently without any of that so I did end up eventually using [rayon](https://github.com/rayon-rs/rayon) (but I should really be using [Tokio](https://github.com/tokio-rs/tokio)). This would require some not trivial redesign and maybe I will update this in the future 🤷.
 
 The [noise](https://github.com/razaekel/noise-rs) library I am using is also a bit slow. There are some issues with integrating it nicely into a bigger project but I don't really want to write my own noise library right now so this works.
 
