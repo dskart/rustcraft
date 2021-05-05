@@ -71,6 +71,14 @@ Running a flat world:
 cargo run --release -- -f
 ```
 
+### Controls
+
+- `awsd` to move around
+- `space` move upwards
+- `shift` move down
+- `left click` break block
+- `right click` place block
+
 ## Authors
 
 - **Raphael Van Hoffelen** - [website](www.raphaelvanhoffelen.com)

@@ -80,7 +80,7 @@ fn event_loop(logger: slog::Logger, config: Config) -> Result<()> {
         .with_inner_size(start_size)
         .build(&event_loop)?;
     window.set_cursor_visible(false);
-    // window.set_cursor_grab(true)?;
+    window.set_cursor_grab(true)?;
 
     use futures::executor::block_on;
     let renderer = block_on(renderer::Renderer::new(logger.clone(), &window))?;
