@@ -71,6 +71,11 @@ Running a flat world:
 cargo run --release -- -f
 ```
 
+### Running on Windows
+
+On windows-msvc, make sure that you have a version of ninja.exe ([download here](https://github.com/ninja-build/ninja/releases)) available in your PATH varaible.
+
+
 ### Controls
 
 - `awsd` to move around
