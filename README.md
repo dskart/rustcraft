@@ -39,7 +39,7 @@ The [noise](https://github.com/razaekel/noise-rs) library I am using is also a b
 - [ ] additional sprites: (tree, flowers)
 - [ ] Block selection during placement
 - [ ] Biomes
-- [ ] "Real" concurency for chunk generation (Tokio).
+- [ ] "Real" concurrency for chunk generation (Tokio).
 
 ## Prerequisites
 
