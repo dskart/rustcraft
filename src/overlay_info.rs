@@ -23,12 +23,12 @@ impl Vertex for OverlayInfoVertex {
                 wgpu::VertexAttribute {
                     offset: 0,
                     shader_location: 0,
-                    format: wgpu::VertexFormat::Float4,
+                    format: wgpu::VertexFormat::Float32x4,
                 },
                 wgpu::VertexAttribute {
                     offset: mem::size_of::<[f32; 4]>() as wgpu::BufferAddress,
                     shader_location: 1,
-                    format: wgpu::VertexFormat::Float2,
+                    format: wgpu::VertexFormat::Float32x2,
                 },
             ],
         }
@@ -123,11 +123,7 @@ impl OverlayInfo {
             &render_pipeline_layout,
             wgpu::PrimitiveTopology::TriangleStrip,
             renderer.sc_desc.format,
-            wgpu::BlendState {
-                src_factor: wgpu::BlendFactor::SrcAlpha,
-                dst_factor: wgpu::BlendFactor::OneMinusSrcAlpha,
-                operation: wgpu::BlendOperation::Add,
-            },
+            wgpu::BlendState::ALPHA_BLENDING,
             &[<OverlayInfoVertex>::desc()],
             wgpu::include_spirv!("../assets/shaders/2d_texture.vert.spv"),
             wgpu::include_spirv!("../assets/shaders/2d_texture.frag.spv"),

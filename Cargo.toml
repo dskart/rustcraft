@@ -13,7 +13,7 @@ slog-async = "2.5.0"
 clap = "2.33.3"
 image = "0.23"
 png = "0.16.8"
-winit = "0.24"
+winit = "0.25.0"
 shaderc = "0.7"
 cgmath = "0.18"
 env_logger = "0.8"
@@ -26,12 +26,7 @@ indicatif = "0.16.0"
 rayon = "1.5"
 noise = { git = "https://github.com/Razaekel/noise-rs", rev= "73e7613dde9b768fae8cd0d05d72828dbe8afc69"}
 rand = "0.8.0"
-
-
-
-[dependencies.wgpu]
-version = "0.7.0"
-features = ["vulkan-portability"]
+wgpu = "0.8.1"
 
 [build-dependencies]
 anyhow = "1.0"
