@@ -20,12 +20,14 @@ pub fn create_render_pipeline(
     color_format: wgpu::TextureFormat,
     color_blend: wgpu::BlendState,
     vertex_layouts: &[wgpu::VertexBufferLayout],
-    vs_src: wgpu::ShaderModuleDescriptor,
-    fs_src: wgpu::ShaderModuleDescriptor,
+    sh_src: &str,
     wireframe_mode: bool,
 ) -> wgpu::RenderPipeline {
-    let vs_module = device.create_shader_module(&vs_src);
-    let fs_module = device.create_shader_module(&fs_src);
+    let sh_module = device.create_shader_module(&wgpu::ShaderModuleDescriptor {
+        label: Some(sh_src),
+        source: wgpu::ShaderSource::Wgsl(std::borrow::Cow::Borrowed(sh_src)),
+        flags: wgpu::ShaderFlags::all(),
+    });
     let mut primitive = wgpu::PrimitiveState::default();
     primitive.topology = primitive_topology;
     primitive.front_face = wgpu::FrontFace::Ccw;
@@ -39,13 +41,13 @@ pub fn create_render_pipeline(
         layout: Some(&layout),
         primitive,
         vertex: wgpu::VertexState {
-            module: &vs_module,
-            entry_point: "main",
+            module: &sh_module,
+            entry_point: "main1_vert",
             buffers: vertex_layouts,
         },
         fragment: Some(wgpu::FragmentState {
-            module: &fs_module,
-            entry_point: "main",
+            module: &sh_module,
+            entry_point: "main1_frag",
             targets: &[wgpu::ColorTargetState {
                 format: color_format,
                 blend: Some(color_blend),

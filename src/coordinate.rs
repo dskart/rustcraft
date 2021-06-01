@@ -109,8 +109,7 @@ impl Coordinate {
             sc_desc.format,
             wgpu::BlendState::REPLACE,
             &[<CoordinateVertex>::desc()],
-            wgpu::include_spirv!("../assets/shaders/line.vert.spv"),
-            wgpu::include_spirv!("../assets/shaders/line.frag.spv"),
+            include_str!("../assets/shaders/line.wgsl"),
             false,
         );
 

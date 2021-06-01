@@ -95,8 +95,7 @@ impl World {
             renderer.sc_desc.format,
             wgpu::BlendState::REPLACE,
             &[<BlockVertex>::desc()],
-            wgpu::include_spirv!("../assets/shaders/3d_texture.vert.spv"),
-            wgpu::include_spirv!("../assets/shaders/3d_texture.frag.spv"),
+            include_str!("../assets/shaders/3d_texture.wgsl"),
             config.wireframe,
         );
 

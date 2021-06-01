@@ -14,7 +14,6 @@ clap = "2.33.3"
 image = "0.23"
 png = "0.16.8"
 winit = "0.25.0"
-shaderc = "0.7"
 cgmath = "0.18"
 env_logger = "0.8"
 log = "0.4"
@@ -32,4 +31,6 @@ wgpu = "0.8.1"
 anyhow = "1.0"
 fs_extra = "1.1"
 glob = "0.3"
-shaderc = "0.7"
+
+[profile.dev.package."*"]
+opt-level = 3

@@ -137,8 +137,7 @@ impl Crosshair {
             renderer.sc_desc.format,
             wgpu::BlendState::ALPHA_BLENDING,
             &[<CrosshairVertex>::desc()],
-            wgpu::include_spirv!("../assets/shaders/2d_texture.vert.spv"),
-            wgpu::include_spirv!("../assets/shaders/2d_texture.frag.spv"),
+            include_str!("../assets/shaders/2d_texture.wgsl"),
             false,
         );
 
