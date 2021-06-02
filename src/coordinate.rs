@@ -23,12 +23,12 @@ impl Vertex for CoordinateVertex {
                 wgpu::VertexAttribute {
                     offset: 0,
                     shader_location: 0,
-                    format: wgpu::VertexFormat::Float3,
+                    format: wgpu::VertexFormat::Float32x3,
                 },
                 wgpu::VertexAttribute {
                     offset: mem::size_of::<[f32; 3]>() as wgpu::BufferAddress,
                     shader_location: 1,
-                    format: wgpu::VertexFormat::Float3,
+                    format: wgpu::VertexFormat::Float32x3,
                 },
             ],
         }
@@ -109,8 +109,7 @@ impl Coordinate {
             sc_desc.format,
             wgpu::BlendState::REPLACE,
             &[<CoordinateVertex>::desc()],
-            wgpu::include_spirv!("../assets/shaders/line.vert.spv"),
-            wgpu::include_spirv!("../assets/shaders/line.frag.spv"),
+            include_str!("../assets/shaders/line.wgsl"),
             false,
         );
 
